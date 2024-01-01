@@ -78,10 +78,10 @@ df_us.head()
 
 ####model analysis
 
-# Assign the cluster centers: centroids
+# Create array of centroid points
 centroids = model.cluster_centers_
 
-# Assign the columns of centroids: centroids_x, centroids_y
+# Pull out centroid X and Y values:
 centroids_x = centroids[:,0]
 centroids_y = centroids[:,1]
 clust_labels = df_mod['Labels'].unique()
