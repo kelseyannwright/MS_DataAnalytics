@@ -33,7 +33,6 @@ for i in range (0, df.shape[0]):
     rows.append([str(df.values[i,j]) for j in range (0, df.shape[1])])
 
 
-
 #feed list to TransactionEncoder
 TE = TransactionEncoder()
 df_array = TE.fit(rows).transform(rows)
